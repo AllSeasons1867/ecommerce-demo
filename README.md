@@ -1,24 +1,11 @@
-# README
+This repo is contains the e-commerce app that I demoed for Dev Edmonton Society on June 6th, 2024. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails project in addition to the set of Keynote slides that I used. The presentation is in the root directory and labeled "RoR Presentation". 
 
-Things you may want to cover:
+To run the program, first ensure that both Ruby and Ruby on Rails are installed on your system. 
 
-* Ruby version
+Then, to migrate the database run "rails db:migrate". 
 
-* System dependencies
+Once that is done, run "rails s" to start the server. 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Please feel free to contact me if you have any issues. 
