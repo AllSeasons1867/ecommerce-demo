@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @product %>
+
+<% unless @product.reviews.empty? %>
+  <h3>Reviews</h3>
+  <ul>
+    <% @product.reviews.each do |review| %>
+      <li>
+        <%= review.content %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_with model: [@product, Review.new] do |form| %>
+  <h3>Your Review:</h3>
+  <%= form.text_area :content, size: "20x10" %>
+  <%= form.submit %>
+<% end %>
+
+<div>
+  <%= link_to "Edit this product", edit_product_path(@product) %> |
+  <%= link_to "Back to products", products_path %>
+
+  <%= button_to "Destroy this product", @product, method: :delete %>
+</div>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <img src="https://i0.wp.com/jerriwilliams.com/wp-content/uploads/2023/05/11-Ep-287-Chris-Tarbell-Twitter-Post.png?fit=1600%2C900&ssl=1" alt="">
+    <%= yield %>
+  </body>
+</html>
